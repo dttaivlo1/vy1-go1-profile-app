@@ -34,7 +34,7 @@ function Authentication({ setToken }) {
       e.preventDefault();
       try{
          let result = await fetch(
-            'http://localhost:8080/api/auth/signin', {
+            'https://profile-app-vy1go1.herokuapp.com/api/auth/signin', {
                method: "post",
                body: JSON.stringify({ username, password }),
                headers: {
