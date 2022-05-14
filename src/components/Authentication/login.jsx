@@ -18,6 +18,40 @@ function Authentication({ setToken }) {
     const [signup, showSignup] = useState("");
     const [username, setUserName] = useState("");
     const [password, setPW] = useState("");
+    /* signup*/
+    const [name, setName] = useState("");
+   const [email, setEmail] = useState("");
+   const [phone, setPhone] = useState("");
+   const [password_re, setRePass] = useState("");
+   const handleOnSignUp = async (e) => {
+      if (password === password_re)
+      {
+         e.preventDefault();
+         let result = await fetch(
+         'https://be-profile-app.herokuapp.com/api/auth/signup', {
+            method: "post",
+            body: JSON.stringify({ username, name, email, password }),
+            headers: {
+               'Content-Type': 'application/json',
+               'Access-Control-Allow-Origin': '*'
+            }
+         })
+      
+       result = await result.json();
+       console.log(JSON.stringify({ username, name, email, password }));
+       console.log(result);
+       if (result) {
+           alert("Data saved succesfully");
+           setEmail("");
+           setName("");
+           setPhone("");
+           setPW("");
+       }
+      }
+      else{
+         alert("nhập lại mật khẩu")
+      }
+    }
     /*dialog toggle*/
     const [open, setOpen] = React.useState(false);
   
@@ -86,26 +120,30 @@ function Authentication({ setToken }) {
                   <legend>Please, enter your email, password and password confirmation for sign up.</legend>
                   <div className="input-block">
                     <label htmlFor="signup-name">Họ Tên</label>
-                    <input id="signup-email" type="text" required />
+                    <input id="signup-email" type="text" value={name} onChange={(e) => setName(e.target.value)}required />
                   </div>
                   <div className="input-block">
                     <label htmlFor="signup-username">Username</label>
-                    <input id="signup-email" type="text" required />
+                    <input id="signup-email" type="text"value={username} onChange={(e) => setUserName(e.target.value)} required />
                   </div>
                   <div className="input-block">
                     <label htmlFor="signup-email">E-mail</label>
-                    <input id="signup-email" type="email" required />
+                    <input id="signup-email" type="email" value={email} onChange={(e) => setEmail(e.target.value)}required />
                   </div>
                   <div className="input-block">
                     <label htmlFor="signup-phone">Số điện thoại</label>
-                    <input id="signup-email" type="email" required />
+                    <input id="signup-email" type="text" required />
                   </div>
                   <div className="input-block">
                     <label htmlFor="signup-password">Mật khẩu</label>
-                    <input id="signup-password" type="password" required />
+                    <input id="signup-password" type="password" value={password} onChange={(e) => setPW(e.target.value)}required />
+                  </div>
+                  <div className="input-block">
+                    <label htmlFor="signup-password">Nhập lại mật khẩu</label>
+                    <input id="signup-password" type="password" value={password_re} onChange={(e) => setRePass(e.target.value)}required />
                   </div>
                 </fieldset>
-                <button type="submit" className="btn-signup">Đăng kí</button>
+                <button type="submit" className="btn-signup" onClick={handleOnSignUp}>Đăng kí</button>
               </form>
             </div>
           </div>

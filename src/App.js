@@ -26,7 +26,7 @@ function App(){
       return <Authentication setToken={setToken} />
     }
     else
-    console.log(token, "dawdawd");
+    console.log(token, "Dang nhap thanh cong");
       return (
       <div>
         <Header/>
