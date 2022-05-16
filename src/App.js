@@ -23,9 +23,31 @@ import Authentication from './components/Authentication/login.jsx';
 import './App.css';
 
 function App(){
- 
+  const tokenAccess = localStorage.getItem('token'); 
+    const result = () => {
+      return fetch(
+      'http://localhost:8080/api/auth/verifyAccessToken', {
+          method: "post",
+          body: JSON.stringify({tokenAccess}),
+          headers: {
+            'Content-Type': 'application/json'
+          },
+      }).then((response) => response.json())
+        .then(data => console.log(data.message))
+        .then(data => localStorage.setItem('status','true'))
+        .catch ((error) => console.error(error));       
+    // result = await result.json();
+    // setToken(result.username);
+    // localStorage.setItem('token', result.accessToken)
+    // console.log(result.accessToken);       
+    // const textFromStorage = localStorage.getItem('token');   
+    // console.log(textFromStorage);
+  }
+  result();
     const [token, setToken] = useState();
-    if(!token) {
+    const status= localStorage.getItem('status')
+    if(status=='true') {
+      console.log(status)
       return <Authentication setToken={setToken} />
     }
     else

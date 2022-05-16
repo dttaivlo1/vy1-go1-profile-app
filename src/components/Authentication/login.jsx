@@ -1,6 +1,6 @@
+
 import React, { Component } from 'react'
 import $ from 'jquery';
-import jwt from 'jwt-decode';
 import './style.css'
 import { useState } from 'react'
 import PropTypes from 'prop-types';
@@ -14,6 +14,7 @@ import Dialog from "@material-ui/core/Dialog";
 
 
 function Authentication({ setToken }) {
+
     const [login, showSignin] = useState("form-wrapper  is-active");
     const [signup, showSignup] = useState("");
     const [username, setUserName] = useState("");
@@ -77,8 +78,12 @@ function Authentication({ setToken }) {
             })         
           result = await result.json();
           setToken(result.username);
-          console.log(result.username);          
+          localStorage.setItem('token', result.accessToken)
+          console.log(result.accessToken);       
+          const textFromStorage = localStorage.getItem('token');   
+          console.log(textFromStorage);
       }
+      
       catch(err) {  
          console.log(err);
          handleClickToOpen();

@@ -3,6 +3,10 @@ import { useSelector } from 'react-redux';
 
 const Header = () => {
  // const {username} = useSelector((state) => state.user);
+ const Logout = () => {
+   localStorage.setItem('status', 'false');
+   localStorage.setItem('token', 'false')
+ }
         return (
           <div>
           <nav className="navbar navbar-expand-md bg-inverse fixed-top scrolling-navbar menu-bg">
@@ -35,7 +39,7 @@ const Header = () => {
                       <a class="dropdown-item" href="#"><img src="https://d1785e74lyxkqq.cloudfront.net/_next/static/v2/5/57c03b6d35b76670f2d701310cc18b26.svg"/>Danh sách giao dịch</a>
                       <a class="dropdown-item" href="#"><img src="https://d1785e74lyxkqq.cloudfront.net/_next/static/v2/5/57c03b6d35b76670f2d701310cc18b26.svg"/>Đặt chỗ</a>
                       <a class="dropdown-item" href="#"><img src="https://d1785e74lyxkqq.cloudfront.net/_next/static/v2/5/57c03b6d35b76670f2d701310cc18b26.svg"/>Khuyến mãi</a>
-                      <a class="dropdown-item" href="#"><img src="https://d1785e74lyxkqq.cloudfront.net/_next/static/v2/5/57c03b6d35b76670f2d701310cc18b26.svg"/>Đăng xuất</a>
+                      <a class="dropdown-item" href="#" onclick={Logout()}><img src="https://d1785e74lyxkqq.cloudfront.net/_next/static/v2/5/57c03b6d35b76670f2d701310cc18b26.svg"/>Đăng xuất</a>
 
                     </div>
                   </li>
