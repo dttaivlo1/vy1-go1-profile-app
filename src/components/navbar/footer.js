@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import './style/style.css';
 
 class SectionContact extends Component {
     render() {
@@ -8,9 +9,17 @@ class SectionContact extends Component {
 			<div className="container">
 			  <div className="row">
 				<div className="col-lg-3 col-md-6 col-sm-6 col-xs-6 col-mb-12">
-				  <div className="textwidget">
-					<p>Appropriately implement one-to-one catalysts for change vis-a-vis wireless catalysts for change. Enthusiastically architect adaptive.</p>
-				  </div>
+					<a classname="navbar" href="/" ><img src="img/logo.svg" alt="" /></a>
+					<div class="item">
+						<img src="https://ik.imagekit.io/tvlk/image/imageResource/2017/12/13/1513150198216-822560165b4cfa5d5ac17a7987028b03.svg?tr=h-35,q-75"/>
+						<img src="https://ik.imagekit.io/tvlk/image/imageResource/2017/12/13/1513150313470-072f6bdc02c0b73fcf791aa2b2264fbd.svg?tr=h-35,q-75"/>
+						<img src="https://ik.imagekit.io/tvlk/image/imageResource/2017/12/13/1513150321127-5096be77d2a19401b476853e54ba2cc6.svg?tr=h-35,q-75"/>
+						<img src="https://ik.imagekit.io/tvlk/image/imageResource/2021/05/10/1620638808154-e6c02ed786235ab59252628a9aa9b715.png?tr=h-35,q-75"/>
+						<br></br>
+						<img src="https://ik.imagekit.io/tvlk/image/imageResource/2021/05/10/1620639321776-9db1bf99b0d4ff46db160c7a02b0536f.png?tr=h-35,q-75"/>
+						<img src="https://ik.imagekit.io/tvlk/image/imageResource/2019/09/23/1569229181629-eeb038ad844874f951326d0a8534bf48.png?tr=q-75,w-100"/>
+						<img src="https://ik.imagekit.io/tvlk/image/imageResource/2019/09/23/1569229181629-eeb038ad844874f951326d0a8534bf48.png?tr=q-75,w-100"/>
+						</div>
 				</div>
 				<div className="col-lg-3 col-md-6 col-sm-6 col-xs-6 col-mb-12">
 				  <div className="widget">
