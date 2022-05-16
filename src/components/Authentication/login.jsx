@@ -87,7 +87,7 @@ function Authentication({ setToken }) {
     return (
         <div >          
              <section className="forms-section">
-          <h1 className="section-title">CHào mừng bạn đến với Traveloka*</h1>
+          <h1 className="section-title">Chào mừng bạn đến với Traveloka*</h1>
           <div className="forms">
             <div className={login}>
               <button type="button" className="switcher switcher-login" onClick={()=>{showSignin("form-wrapper  is-active"); showSignup("form-wrapper")}}>
@@ -106,7 +106,7 @@ function Authentication({ setToken }) {
                     <input id="login-password" placeholder="Mật khẩu" type="password"value={password} onChange={(e) => setPW(e.target.value)} required />
                   </div>
                 </fieldset>
-                <button type="submit" className="btn-login"onClick={handleOnSubmit}>Logưin</button>
+                <button type="submit" className="btn-login"onClick={handleOnSubmit}>Đăng nhập</button>
               </form>
             </div>
             <div className= {signup}>

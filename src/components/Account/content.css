@@ -59,3 +59,31 @@ body{margin-top:20px;
         transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
         transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
     }
+
+    header{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1px 10px;
+    }
+
+    header nav ul li {
+        margin-top:8.5px;
+        list-style: none;
+        float: left;
+        padding: 1px 10px;
+        color: black;
+        cursor: pointer;
+        margin-left:50px;
+    }
+    header nav ul li:hover{
+        color:rgb(22, 144, 220);
+        border-bottom: 2px solid;
+    }
+
+    button{
+        margin-left:135px;
+        width: 25%;
+    }
+
+    

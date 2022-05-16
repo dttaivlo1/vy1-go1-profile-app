@@ -14,33 +14,34 @@ class SectionContact extends Component {
 				</div>
 				<div className="col-lg-3 col-md-6 col-sm-6 col-xs-6 col-mb-12">
 				  <div className="widget">
-					<h3 className="block-title">Create a Free Account</h3>
+					<h3 className="block-title">Về Traveloka</h3>
 					<ul className="menu">
-					  <li><a href="#">Sign In</a></li>
-					  <li><a href="#">About Us</a></li>
-					  <li><a href="#">Pricing</a></li>
-					  <li><a href="#">Jobs</a></li>
+					  <li><a href="#">Cách đặt chỗ</a></li>
+					  <li><a href="#">Liên hệ với chúng tôi</a></li>
+					  <li><a href="#">Trợ giúp</a></li>
+					  <li><a href="#">Tuyển dụng</a></li>
+						<li><a href="#">Về chúng tôi</a></li>
 					</ul>
 				  </div>
 				</div>
 				<div className="col-lg-3 col-md-6 col-sm-6 col-xs-6 col-mb-12">
 				  <div className="widget">
-					<h3 className="block-title">Resource</h3>
+					<h3 className="block-title">Sản phẩm</h3>
 					<ul className="menu">
-					  <li><a href="#">Comunnity</a></li>
-					  <li><a href="#">Become a Partner</a></li>
-					  <li><a href="#">Our Technology</a></li>
-					  <li><a href="#">Documentation</a></li>
+					  <li><a href="#">Vé máy bay</a></li>
+					  <li><a href="#">Khách sạn</a></li>
+					  <li><a href="#">Căn hộ</a></li>
+					  <li><a href="#">Đưa đón sân bay</a></li>
 					</ul>
 				  </div>
 				</div>
 				<div className="col-lg-3 col-md-6 col-sm-6 col-xs-6 col-mb-12">
 				  <div className="widget">
-					<h3 className="block-title">Support</h3>
+					<h3 className="block-title">Khác</h3>
 					<ul className="menu">
-					  <li><a href="#">Terms &amp; Condition</a></li>
-					  <li><a href="#">Contact Us</a></li>
-					  <li><a href="#">Privacy Policy</a></li>
+					  <li><a href="#">Điều khoản &amp; Điều kiện</a></li>
+						<li><a href="#">Chính sách quyền riêng tư</a></li>
+					  <li><a href="#">Quy chế hoạt động</a></li>
 					  <li><a href="#">Help</a></li>
 					</ul>
 				  </div>

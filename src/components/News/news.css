@@ -1,0 +1,41 @@
+#wrapper-3
+{
+  align-items: right;
+  display:flex;
+  margin-right:100px;
+  margin-left:275px;
+  margin-top:8px;
+
+
+  
+}
+.switch-toggle
+{
+  width:45px;
+  height:25px;
+  appearance: none;
+  background:#83d8ff;
+  border-radius: 26px;
+  position: relative;
+  cursor: pointer;
+}
+.switch-toggle::before{
+  content: " ";
+  width: 22px;
+  height: 22px;
+  top: 1.5px;
+  left: 1.5px;
+  position: absolute;
+  background: #efe2bf;
+  border-radius: 50%; 
+  box-shadow: inset 0px 0px 16px rgba(0, 0, 0, .3);
+  transition: 0.25s;
+}
+
+.switch-toggle:checked{
+  background: #749dd6;
+}
+
+.switch-toggle:checked:before{
+  left: 20px;
+}

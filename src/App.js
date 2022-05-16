@@ -10,8 +10,11 @@ import Home from './components/Home/home.js';
 import PartnerOverview from './components/partner-page/Home.js';
 import Leftbar from './components/navbar/leftbar';
 import Booking from './components/booking/booking.js';
+import Info from './components/Info/info.js';
 import Ticket from './components/Ticket/ticket.js';
 import Point from './components/Point/point.js';
+import Password from './components/Password/password.js';
+import News from './components/News/news.js';
 
 //đăng nhập đăng kí
 import Register from './components/identification/register.js';
@@ -44,7 +47,10 @@ function App(){
              <Route path="/history" element = {<History/>}/>
              <Route path="/my-booking" element = {<Booking/>}/>
              <Route path="/ticket-alert" element = {<Ticket/>}/>
+             <Route path="/my-info" element = {<Info/>}/>
              <Route exact path="/partner/home" element ={<PartnerOverview/>}/>
+             <Route path="/password" element = {<Password/>}/>
+             <Route path="/news" element = {<News/>}/>
         </Routes>
         </div>
         </div>
