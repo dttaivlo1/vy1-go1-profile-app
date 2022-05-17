@@ -4,8 +4,9 @@ import { useSelector } from 'react-redux';
 const Header = () => {
  // const {username} = useSelector((state) => state.user);
  const Logout = () => {
-   localStorage.setItem('status', 'false');
-   localStorage.setItem('token', 'false')
+   
+   localStorage.setItem('token', 'false');
+   localStorage.removeItem('status');
  }
         return (
           <div>

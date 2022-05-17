@@ -46,7 +46,7 @@ function App(){
   result();
     const [token, setToken] = useState();
     const status= localStorage.getItem('status')
-    if(status=='true') {
+    if(!token) {
       console.log(status)
       return <Authentication setToken={setToken} />
     }
