@@ -1,5 +1,5 @@
 
-import React, { Component, useState } from 'react';
+import React, { Component, useState, useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Header from './components/navbar/header.js';
 import Footer from './components/navbar/footer.js';
@@ -23,6 +23,14 @@ import Authentication from './components/Authentication/login.jsx';
 import './App.css';
 
 function App(){
+  const [UserName, setUser] = useState("");
+  useEffect(() => {
+    const loggedInUser = localStorage.getItem("user");
+    if (loggedInUser) {
+      const foundUser = JSON.parse(loggedInUser);
+      setUser(foundUser);
+    }
+  }, []);
   const tokenAccess = localStorage.getItem('token'); 
     const result = () => {
       return fetch(
@@ -34,7 +42,7 @@ function App(){
           },
       }).then((response) => response.json())
         .then(data => console.log(data.message))
-        .then(data => localStorage.setItem('status','true'))
+        .then(data => localStorage.setItem('status',data.message))
         .catch ((error) => console.error(error));       
     // result = await result.json();
     // setToken(result.username);
@@ -44,18 +52,17 @@ function App(){
     // console.log(textFromStorage);
   }
   result();
-    const [token, setToken] = useState();
+    const [token, setToken] = useState(localStorage.getItem("token"));
     const status= localStorage.getItem('status')
     if(!token) {
       console.log(status)
       return <Authentication setToken={setToken} />
     }
     else
-    console.log(token, "Dang nhap thanh cong");
+    console.log(token, "Dang nhap thanh cong", status);
       return (
       <div>
         <Header/>
-        
         <div className="section-box-main">
         <Leftbar user={token}/>
         <div className="box-right">

@@ -15,6 +15,23 @@ export default class password extends Component {
 					</ul>
 				</nav>
 				</header>
+        <form>
+        <div className="form-row">
+          <div className="col-md-4 mb-3">
+            <label htmlFor="validationDefault01">Mật khẩu mới</label>
+            <input type="password" className="form-control" id="validationDefault01" placeholder=""  required />
+          </div>
+          <div className="col-md-4 mb-3">
+            <label htmlFor="validationDefault01">Nhập lại mật khẩu mới</label>
+            <input type="password" className="form-control" id="validationDefault01" placeholder=""  required />
+          </div>
+          <div className="col-md-4 mb-3">
+          <label htmlFor="validationDefault01">Nhập lại mật khẩu mới</label>
+          <button type="submit" class="btn btn-primary"style={{width: "130px", margin: "auto"}} id="btn1"> Save </button>
+          </div>
+          
+        </div>
+        </form>
         <br></br>
         <h9>Xác thực</h9>
         <div className="course-2">

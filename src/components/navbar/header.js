@@ -5,8 +5,7 @@ const Header = () => {
  // const {username} = useSelector((state) => state.user);
  const Logout = () => {
    
-   localStorage.setItem('token', 'false');
-   localStorage.removeItem('status');
+  //localStorage.clear();
  }
         return (
           <div>

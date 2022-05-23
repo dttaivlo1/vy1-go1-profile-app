@@ -11,7 +11,14 @@ import DialogTitle from "@material-ui/core/DialogTitle";
 import DialogActions from "@material-ui/core/DialogActions";
 import DialogContent from "@material-ui/core/DialogContent";
 import Dialog from "@material-ui/core/Dialog";
-
+import { useSearchParams } from 'react-router-dom';
+/* 
+const params = useParams();
+if(params === "")
+*/
+const serviceUrlMapping = {
+  voucher: 'https://vy1-go1-profile-app-s3cic.ondigitalocean.app'
+}
 
 function Authentication({ setToken }) {
 
@@ -24,6 +31,8 @@ function Authentication({ setToken }) {
    const [email, setEmail] = useState("");
    const [phone, setPhone] = useState("");
    const [password_re, setRePass] = useState("");
+
+   const s = useSearchParams()
    const handleOnSignUp = async (e) => {
       if (password === password_re)
       {
@@ -79,9 +88,13 @@ function Authentication({ setToken }) {
           result = await result.json();
           setToken(result.username);
           localStorage.setItem('token', result.accessToken)
+          localStorage.setItem('username', result.username)
+          
           console.log(result.accessToken);       
           const textFromStorage = localStorage.getItem('token');   
           console.log(textFromStorage);
+          const url= serviceUrlMapping[s.se]
+          // TODO: redirect url
       }
       
       catch(err) {  
