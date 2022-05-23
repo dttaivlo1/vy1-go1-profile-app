@@ -42,7 +42,7 @@ function Point() {
                  <div className="courses-container">
         <div className="course">
           <div className="course-preview">
-            <h6>Điểm khả dụng</h6>
+            <h10>Điểm khả dụng</h10>
             <h2>{point} (VND)</h2>
             <a href="#">View all chapters <i className="fas fa-chevron-right" /></a>
           </div>

@@ -29,6 +29,13 @@
 	margin: 10px 0;
     color: #fff;
 }
+.course h10 {
+	opacity: 0.9;
+    color:  white;
+	margin: 0;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
 
 .course-preview {
 	background-color: #007bff;
@@ -65,4 +72,5 @@
 	height: 5px;
 	width: 100%;
 }
+
 
