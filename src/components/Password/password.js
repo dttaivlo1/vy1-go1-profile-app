@@ -5,7 +5,7 @@ export default class password extends Component {
   render() {
   return (
     <div id="content" class="col">
-      <h3>Settings</h3>
+      <h4>Thay đổi mật khẩu</h4>
 				<header>
 					<nav>
 					<ul>

@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 function Point() {
    
       const [username, setUserName] = useState("");
-      const [point, setPoint] = useState("");
+      const [point, setPoint] = useState(localStorage.getItem('point'));
       const handleOnSubmit = async (e) => {
         
         e.preventDefault();
@@ -43,13 +43,11 @@ function Point() {
         <div className="course">
           <div className="course-preview">
             <h10>Điểm khả dụng</h10>
-            <h2>{point} (VND)</h2>
-            <a href="#">View all chapters <i className="fas fa-chevron-right" /></a>
+            <h2>{point}  point</h2>
+            <a href="#">1 điểm = 1,000.00 VND <i className="fas fa-chevron-right" /></a>
           </div>
           <div className="course-info">
-            <div className="progress-container">
-              <button type="submit" className="btn-login"onClick={handleOnSubmit}>Cập nhật điểm</button>
-            </div>
+            
             <h6>Tiến trình tích điểm</h6>
             <button className="btn"><FontAwesomeIcon icon="fa-solid fa-arrow-right" /></button>
           </div>

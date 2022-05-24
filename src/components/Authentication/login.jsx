@@ -40,7 +40,7 @@ function Authentication({ setToken }) {
          let result = await fetch(
          'https://be-profile-app.herokuapp.com/api/auth/signup', {
             method: "post",
-            body: JSON.stringify({ username, name, email, password }),
+            body: JSON.stringify({ username, name, email, password, phone }),
             headers: {
                'Content-Type': 'application/json',
                'Access-Control-Allow-Origin': '*'
@@ -89,6 +89,11 @@ function Authentication({ setToken }) {
           setToken(result.username);
           localStorage.setItem('token', result.accessToken)
           localStorage.setItem('username', result.username)
+          localStorage.setItem('name', result.name)
+          localStorage.setItem('email', result.email)
+          localStorage.setItem('phone', result.phone)
+          localStorage.setItem('point', result.point)
+          
           
           console.log(result.accessToken);       
           const textFromStorage = localStorage.getItem('token');   
@@ -150,7 +155,7 @@ function Authentication({ setToken }) {
                   </div>
                   <div className="input-block">
                     <label htmlFor="signup-phone">Số điện thoại</label>
-                    <input id="signup-email" type="text" required />
+                    <input id="signup-email" type="text" value={phone} onChange={(e) => setPhone(e.target.value)}required  />
                   </div>
                   <div className="input-block">
                     <label htmlFor="signup-password">Mật khẩu</label>

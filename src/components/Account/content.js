@@ -5,10 +5,14 @@ import './content.css'
 function Content() {
 	
 	const [startDate, setStartDate] = useState(new Date());
+  const [name, setname ] = useState(localStorage.getItem("name"));
+  const [email, setEmail] = useState(localStorage.getItem("email"));
+  const [phone, setphone] = useState(localStorage.getItem("phone"));
 	return (
 		
+    
 	  <div className="right-box">
-			<h3>Settings</h3>
+			<h4>Tài khoản của bạn</h4>
 				<header>
 					<nav>
 					<ul>
@@ -22,12 +26,19 @@ function Content() {
         <div className="form-row">
           <div className="col-md-4 mb-3">
             <label htmlFor="validationDefault01">Họ Tên</label>
-            <input type="text" className="form-control" id="validationDefault01" placeholder="Nhập tên của bạn" defaultValue="Dương Tấn Tài" required />
+            <input type="text" className="form-control" id="validationDefault01" placeholder="Nhập tên của bạn" defaultValue={name} required />
           </div>
           <div className="col-md-4 mb-3">
-            <label htmlFor="validationDefault02">Tên  thường gọi</label>
-            <input type="text" className="form-control" id="validationDefault02" placeholder="Last name" defaultValue="Otto" required />
+            <label htmlFor="validationDefault02">Email</label>
+            <input type="text" className="form-control" id="validationDefault02" placeholder="Last name" defaultValue={email} required />
           </div>
+        </div>
+        <div className="form-row">
+          <div className="col-md-4 mb-3">
+            <label htmlFor="validationDefault01">Số điện thoại</label>
+            <input type="text" className="form-control" id="validationDefault01" placeholder="Nhập số điện thoại của bạn" defaultValue={phone} required />
+          </div>
+          
         </div>
 		<div class="form-row">
 		<div className="col-md-4 mb-3">

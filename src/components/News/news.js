@@ -5,7 +5,7 @@ export default function News() {
   return (
     <div className="right-box">
     <div id="content" class="col">
-      <h3>Settings</h3>
+      <h4>Bản tin</h4>
 				<header>
 					<nav>
 					<ul>

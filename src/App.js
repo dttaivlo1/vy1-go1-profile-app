@@ -15,6 +15,7 @@ import Ticket from './components/Ticket/ticket.js';
 import Point from './components/Point/point.js';
 import Password from './components/Password/password.js';
 import News from './components/News/news.js';
+import Partner from './components/partner-page/Home';
 
 //đăng nhập đăng kí
 import Register from './components/identification/register.js';
@@ -64,7 +65,7 @@ function App(){
       <div>
         <Header/>
         <div className="section-box-main">
-        <Leftbar user={token}/>
+        <Leftbar />
         <div className="box-right">
         <Routes>
             <Route exact path="/home" element ={<Home/>}/>

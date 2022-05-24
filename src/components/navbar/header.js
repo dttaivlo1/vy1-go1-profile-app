@@ -1,11 +1,16 @@
 import React, {Component} from 'react';
 import { useSelector } from 'react-redux';
+import { useNavigate } from "react-router-dom";
 
 const Header = () => {
  // const {username} = useSelector((state) => state.user);
+ let navigate = useNavigate(); 
  const Logout = () => {
-   
+  
   //localStorage.clear();
+  //let path = '/login'; 
+  //consolenavigate(path);
+  
  }
         return (
           <div>
@@ -39,8 +44,8 @@ const Header = () => {
                       <a class="dropdown-item" href="#"><img src="https://d1785e74lyxkqq.cloudfront.net/_next/static/v2/5/57c03b6d35b76670f2d701310cc18b26.svg"/>Danh sách giao dịch</a>
                       <a class="dropdown-item" href="#"><img src="https://d1785e74lyxkqq.cloudfront.net/_next/static/v2/5/57c03b6d35b76670f2d701310cc18b26.svg"/>Đặt chỗ</a>
                       <a class="dropdown-item" href="#"><img src="https://d1785e74lyxkqq.cloudfront.net/_next/static/v2/5/57c03b6d35b76670f2d701310cc18b26.svg"/>Khuyến mãi</a>
-                      <a class="dropdown-item" href="#" onclick={Logout()}><img src="https://d1785e74lyxkqq.cloudfront.net/_next/static/v2/5/57c03b6d35b76670f2d701310cc18b26.svg"/>Đăng xuất</a>
-
+                      <a class="dropdown-item" href="/" ><img src="https://d1785e74lyxkqq.cloudfront.net/_next/static/v2/5/57c03b6d35b76670f2d701310cc18b26.svg"/>Đăng xuất</a>
+                      <button onclick={Logout()}>dadwa</button>
                     </div>
                   </li>
                   
