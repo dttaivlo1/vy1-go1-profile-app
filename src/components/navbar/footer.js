@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import './style/style.css';
-
 class SectionContact extends Component {
     render() {
         return (
@@ -20,27 +19,48 @@ class SectionContact extends Component {
 						<img src="https://ik.imagekit.io/tvlk/image/imageResource/2019/09/23/1569229181629-eeb038ad844874f951326d0a8534bf48.png?tr=q-75,w-100"/>
 						<img src="https://ik.imagekit.io/tvlk/image/imageResource/2019/09/23/1569229181629-eeb038ad844874f951326d0a8534bf48.png?tr=q-75,w-100"/>
 						</div>
+						<br></br>
+						<div span={4}>
+                    <h6>Đối tác thanh toán</h6>
+                    <img src="img/sponsors.png"alt="sponsors" width="250"/>;
+            </div>
 				</div>
 				<div className="col-lg-3 col-md-6 col-sm-6 col-xs-6 col-mb-12">
 				  <div className="widget">
 					<h3 className="block-title">Về Traveloka</h3>
 					<ul className="menu">
-					  <li><a href="#">Cách đặt chỗ</a></li>
-					  <li><a href="#">Liên hệ với chúng tôi</a></li>
-					  <li><a href="#">Trợ giúp</a></li>
-					  <li><a href="#">Tuyển dụng</a></li>
-						<li><a href="#">Về chúng tôi</a></li>
+					  <li><a href="#">Cách đặt chỗ</a></li><br></br>
+					  <li><a href="#">Liên hệ với chúng tôi</a></li><br></br>
+					  <li><a href="#">Trợ giúp</a></li><br></br>
+					  <li><a href="#">Tuyển dụng</a></li><br></br>
+						<li><a href="#">Về chúng tôi</a></li><br></br>
 					</ul>
+					<br></br>
+					<h3 className="block-title">Theo dõi chúng tôi trên</h3>
+                    <div>
+                        <img src="https://d1785e74lyxkqq.cloudfront.net/_next/static/v2/5/50752125b5a9ef77932df8daaa59c28f.svg" alt="social" width="35"/>
+                        <a className="link" href="https://twitter.com/TravelokaVN">Facebook</a><br></br>
+                        <img src="https://d1785e74lyxkqq.cloudfront.net/_next/static/v2/b/b5c0e050176153ba05ed1d0ece95c9e2.svg" alt="social" width="35"/>
+                        <a className="link" href="https://www.facebook.com/TravelokaVN">Twitter</a><br></br>
+                        <img src="https://d1785e74lyxkqq.cloudfront.net/_next/static/v2/a/a7a24301c32be8a7d95db652945f3249.svg" alt="social" width="35"/>
+                        <a className="link" href="https://instagram.com/traveloka">Instagram</a><br></br>
+                        <img src="https://d1785e74lyxkqq.cloudfront.net/_next/static/v2/6/61ba544b71eed91c568993099757aa34.svg" alt="socialS" width="35"/>
+                        <a className="link" href="https://www.youtube.com/Traveloka">YouTube</a><br></br>
+                    </div>
 				  </div>
 				</div>
 				<div className="col-lg-3 col-md-6 col-sm-6 col-xs-6 col-mb-12">
 				  <div className="widget">
 					<h3 className="block-title">Sản phẩm</h3>
 					<ul className="menu">
-					  <li><a href="#">Vé máy bay</a></li>
-					  <li><a href="#">Khách sạn</a></li>
-					  <li><a href="#">Căn hộ</a></li>
-					  <li><a href="#">Đưa đón sân bay</a></li>
+					  <li><a href="#">Vé máy bay</a></li><br></br>
+					  <li><a href="#">Khách sạn</a></li><br></br>
+						<li><a href="#">Combo tiết kiệm</a></li><br></br>
+						<li><a href="#">Biệt thự</a></li><br></br>
+					  <li><a href="#">Căn hộ</a></li><br></br>
+						<li><a href="#">JR Pass</a></li><br></br>
+						<li><a href="#">Car Rental</a></li><br></br>
+					  <li><a href="#">Đưa đón sân bay</a></li><br></br>
 					</ul>
 				  </div>
 				</div>
@@ -48,13 +68,22 @@ class SectionContact extends Component {
 				  <div className="widget">
 					<h3 className="block-title">Khác</h3>
 					<ul className="menu">
-					  <li><a href="#">Điều khoản &amp; Điều kiện</a></li>
-						<li><a href="#">Chính sách quyền riêng tư</a></li>
-					  <li><a href="#">Quy chế hoạt động</a></li>
-					  <li><a href="#">Help</a></li>
+						<li><a href="#">Traveloka Affiliate</a></li><br></br>
+						<li><a href="#">Traveloka Blog</a></li><br></br>
+					  <li><a href="#">Điều khoản &amp; Điều kiện</a></li><br></br>
+						<li><a href="#">Chính sách quyền riêng tư</a></li><br></br>
+					  <li><a href="#">Quy chế hoạt động</a></li><br></br>
+					  <li><a href="#">Đăng ký nơi nghỉ của bạn</a></li><br></br>
+						<li><a href="#">Khu vực báo chí</a></li><br></br>
 					</ul>
 				  </div>
+					<h3 className="block-title">Theo dõi chúng tôi trên</h3>
+                    <div>
+                        <input type="image" src="https://d1785e74lyxkqq.cloudfront.net/_next/static/v2/c/c90225c14bd4b3b9dc24f1eef7ce6260.svg"width="150" href="https://app.adjust.com/ie88tj"></input><br></br>
+                        <input type="image" src="https://d1785e74lyxkqq.cloudfront.net/_next/static/v2/7/710ae7ca20e600c9c96165ea400042c1.svg" width="150" href="https://app.adjust.com/hc9if0"></input>
+                    </div>
 				</div>
+				
 			  </div>
 			</div>
 			<div className="copyright">
@@ -62,6 +91,7 @@ class SectionContact extends Component {
 				<div className="row">
 				  <div className="col-md-12">
 					<div className="site-info float-left">
+					<p>Công ty TNHH Traveloka Việt Nam. Mã số DN: 0313581779. Tòa nhà An Phú, 117-119 Lý Chính Thắng, P. 7, Q. 3, TPHCM</p>
 					  <p>© 2020 - Designed by <a href="http://uideck.com" rel="nofollow">UIdeck</a></p>
 					</div>              
 					<div className="float-right">  
