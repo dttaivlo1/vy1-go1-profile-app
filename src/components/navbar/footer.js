@@ -91,6 +91,7 @@ class SectionContact extends Component {
 				<div className="row">
 				  <div className="col-md-12">
 					<div className="site-info float-left">
+					<p>Công ty TNHH Traveloka Việt Nam. Mã số DN: 0313581779. Tòa nhà An Phú, 117-119 Lý Chính Thắng, P. 7, Q. 3, TPHCM</p>
 					  <p>© 2020 - Designed by <a href="http://uideck.com" rel="nofollow">UIdeck</a></p>
 					</div>              
 					<div className="float-right">  
