@@ -12,7 +12,8 @@ export default class leftbar extends Component {
                 <div className="container">
                   <div className="row">
                     <div className="col" >
-                       <h6 className="text-muted" id="div-name">Duong Tan Tai</h6> 
+                    <img class="adg-u-circle" src="https://api-private.atlassian.com/users/557058:edb08926-64d3-41b2-b733-59276a71c01f/avatar?initials=public" alt="Deleted user" width="15%"></img>
+                    <h8 className="text-muted" id="div-name">Phạm Minh Khôi</h8>
                     <div className="list-group">
                       <a href="reward" className="list-group-item list-group-item-action active" id="item-point" onClick={chuyendi}><img src="https://d1785e74lyxkqq.cloudfront.net/_next/static/v2/5/5aee8aca6897d279a7cb105f7e167754.svg" />Điểm thưởng của tôi</a>
                       <a href="my-card" className="list-group-item list-group-item-action"id = "item-card" onClick={chuyendi}><img src="https://d1785e74lyxkqq.cloudfront.net/_next/static/v2/4/468b3a08ab94b440b4e09fb9130eee1e.svg"></img>Thẻ của tôi</a>
