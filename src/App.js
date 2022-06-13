@@ -35,12 +35,12 @@ function App(){
   const tokenAccess = localStorage.getItem('token'); 
     const result = () => {
       return fetch(
-      'http://localhost:8080/api/auth/verifyAccessToken', {
+      'https://be-profile-app.herokuapp.com/api/auth/verifyAccessToken', {
           method: "post",
           body: JSON.stringify({tokenAccess}),
           headers: {
             'Content-Type': 'application/json'
-          },
+          },  
       }).then((response) => response.json())
         .then(data => console.log(data.message))
         .then(data => localStorage.setItem('status',data.message))
@@ -63,6 +63,7 @@ function App(){
     console.log(token, "Dang nhap thanh cong", status);
       return (
       <div>
+       
         <Header/>
         <div className="section-box-main">
         <Leftbar />
@@ -70,7 +71,7 @@ function App(){
         <Routes>
             <Route exact path="/home" element ={<Home/>}/>
              <Route exact path="/account" element= {<Account/>}/>
-             <Route path="/login" element = {<Login/>}/>
+             
              <Route path="/register" element = {<Register/>}/>
              <Route path="/reward" element = {<Point/>}/>
              <Route path="/voucher" element = {<Giftvoucher/>}/>

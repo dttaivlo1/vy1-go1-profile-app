@@ -1,48 +1,113 @@
 import React, { Component } from 'react';
+import Card from 'react-bootstrap/Card'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
+
 import './ticket.css';
 
 class Ticket extends Component {
     render() {
         return (
-            <div className="right-box">
-            <div>
-            <div className="banner">
-            <img src="https://ik.imagekit.io/tvlk/image/imageResource/2019/02/11/1549862570294-0bd43afb15a66986be63505ec4e5afe7.svg?tr=q-75" alt=""/>
-            </div>
-            <div className="row">
-                <div className="column col-60">
-                    <h8>Thông báo giá vé máy bay</h8>
-                </div>
-                <div className="column col-40">
-                    <a href="#" id="notification"><img src="https://d1785e74lyxkqq.cloudfront.net/_next/static/v2/7/70100d4a2047ac955124953dbc3351db.svg"></img>Thêm thông báo</a>
-                </div>
-               
-            </div>
-            <br></br>
-            <div className="row">
-                <div className="column col-60">
-                    <h1>Bạn có muốn nhận thông báo trên máy tính?</h1>
-                </div>
-                <div className="column col-40">
-                    <a href="#" id="allow">Cho phép gửi thông báo</a>
-                </div>
-                </div>
-                <br></br>
-                <div className="row">
-                <div className="column col-30">
-                    <img src="https://ik.imagekit.io/tvlk/image/imageResource/2018/12/12/1544601935390-f9c8c05797a24b0d2984266125ae209d.png?tr=q-75"></img>
-                </div>
-                <div className="column col-40">
-                    <br></br>
-                    <br></br>
-                    <br></br>
-                    <h7>Không tìm thấy thông báo</h7>
-                    <h5>Tạo thông báo cập nhật mới nhất khi có!</h5>
-                </div>
-                </div>
-            </div>   
-            </div> 
+          <div className="container">
                 
+          <Row xs={1} md={2} className="g-4">
+          <Col>
+               <a  href="#">
+               <Card>
+                  <Card.Img variant="top" src="https://www.w3schools.com/w3css/img_forest.jpg"/>
+                  <Card.Body>
+                    <Card.Title>Nhà hàng</Card.Title>
+                    <Card.Text>
+                      Decription
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
+               </a>
+              </Col>
+              <Col>
+                <Card>
+                  <Card.Img variant="top" src="https://www.w3schools.com/w3css/img_forest.jpg"  />
+                  <Card.Body>
+                    <Card.Title>Tour du lịch</Card.Title>
+                    <Card.Text>
+                      Decription
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
+              </Col>
+              <Col>
+                <Card>
+                  <Card.Img variant="top" src="https://www.w3schools.com/w3css/img_forest.jpg"  />
+                  <Card.Body>
+                    <Card.Title>Thuê biệt thự - villas</Card.Title>
+                    <Card.Text>
+                      Decription
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
+              </Col>
+              <Col>
+                <Card>
+                  <Card.Img variant="top" src="https://www.w3schools.com/w3css/img_forest.jpg"  />
+                  <Card.Body>
+                    <Card.Title>Đưa đón sân bay</Card.Title>
+                    <Card.Text>
+                      Decription
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
+              </Col>
+            
+          </Row> 
+          <br/>
+          <Row xs={1} md={2} className="g-4">
+          <Col>
+                <Card>
+                  <Card.Img variant="top" src="https://www.w3schools.com/w3css/img_forest.jpg"  />
+                  <Card.Body>
+                    <Card.Title>Thuê xe</Card.Title>
+                    <Card.Text>
+                      Decription
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
+              </Col>
+              <Col>
+                <Card>
+                  <Card.Img variant="top" src="https://www.w3schools.com/w3css/img_forest.jpg"  />
+                  <Card.Body>
+                    <Card.Title>Khách sạn</Card.Title>
+                    <Card.Text>
+                      Decription
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
+              </Col>
+              <Col>
+                <Card>
+                  <Card.Img variant="top" src="https://www.w3schools.com/w3css/img_forest.jpg"  />
+                  <Card.Body>
+                    <Card.Title>Combo</Card.Title>
+                    <Card.Text>
+                      Decription
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
+              </Col>
+              <Col>
+                <Card>
+                  <Card.Img variant="top" src="https://www.w3schools.com/w3css/img_forest.jpg"  />
+                  <Card.Body>
+                    <Card.Title>Voucher</Card.Title>
+                    <Card.Text>
+                      Decription
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
+              </Col>
+            
+          </Row> 
+          </div>
         );
     }
 }

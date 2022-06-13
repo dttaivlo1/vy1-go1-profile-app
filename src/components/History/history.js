@@ -9,29 +9,24 @@ import Leftbar from './../navbar/leftbar'
 function History() {
   const [history, setHistory] = useState();
   const handleOnSubmit = async (e) => {
-   
+   const username = localStorage.getItem('username')
     e.preventDefault();
     try{
-     console.log("dădwad");
+     console.log(username);
        let result = await fetch(
           'https://be-profile-app.herokuapp.com/api/transaction/getHistory', {
             method: "get",
             headers: {
-               'Content-Type': 'application/json'
+               'Content-Type': 'application/json',
+               id : JSON.stringify({username})
             },
+     //      body:  JSON.stringify({username})
     })         
     result = await result.json();
-       console.log(result.trans)
-      
-       
-
-       setHistory(result.trans);
-
-      
-      
+       console.log(result)
+       setHistory(result);
         // TODO: redirect url
     }
-    
     catch(err) {  
        console.log(err);
       
@@ -44,7 +39,7 @@ function History() {
      FontWeight: 'bold'
     };
   };
-    const [rowData] = useState(history);
+   
     
       const [columnDefs] = useState([
        

@@ -87,7 +87,9 @@ function Authentication({ setToken }) {
             })         
           result = await result.json();
           setToken(result.username);
+
           localStorage.setItem('token', result.accessToken)
+          localStorage.setItem('id', result.id)
           localStorage.setItem('username', result.username)
           localStorage.setItem('name', result.name)
           localStorage.setItem('email', result.email)
