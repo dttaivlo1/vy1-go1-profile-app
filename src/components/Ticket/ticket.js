@@ -76,7 +76,7 @@ class Ticket extends Component {
                 <Card>
                   <Card.Img variant="top" src="https://www.w3schools.com/w3css/img_forest.jpg"  />
                   <Card.Body>
-                    <Card.Title>Khách sạn</Card.Title>
+                    <Card.Title><a href="157.245.207.242:3000">Khách sạn</a></Card.Title>
                     <Card.Text>
                       Decription
                     </Card.Text>
